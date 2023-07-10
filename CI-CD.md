@@ -67,16 +67,22 @@ Jenkins is a open source automation server in which the central build and CI pro
 4. Then select freestyle project and select ok.
    
 5. Select discard old builds and for max number of   build put 3 as shown in the image.
+
 ![Alt text](<CICD.images/Jenkins 1.png>)
 
 6. Then go to build option and select execute shell and on description write a linux command. For example I put uname which will give the name of operating system I am using. 
+
 ![Alt text](<CICD.images/build jenkins.png>)
+
 7. Then select save.
   
 8. Then go to build now.
+
 ![Alt text](CICD.images/build.now.jenkins.png)
 
 9. On build history select the arrow down and select console output.
+
 ![Alt text](<CICD.images/console output.png>)
+
 ![Alt text](<CICD.images/outup info.png>)
 
