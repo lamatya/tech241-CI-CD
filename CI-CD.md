@@ -2,11 +2,11 @@
 
 ## What is CICD?
 
-CI/CD is considered to be the backbone of DevOps practices and automations. It is a software development practise that involves automating the process of integrating code changes, running tests and deploying the application.
+CI/CD is considered to be the backbone of DevOps practices and automations.
 
-Continuous Delivery is an extension to continous intergration which helps in ensuring that the new releases can get to customers faster in a sustainable way. Additionally, Contionous Deployment is one more step to continuous delivery whhich helps to ensure that every changes made passes all the stages of the production pipleline to be released to the customers.
+Continuous Delivery is an extension to continous intergration which helps in ensuring that the new releases can get to customers faster in a sustainable way. Additionally, Contionous Deployment is one more step to continuous delivery whhich helps to ensure that every changes made passes all the stages of the production pipleline to be released to the customers. No human intervention required.
 
-![Alt text](CICD.images/ci-cd-pipeline.png)
+
 
 ## Why Jenkins?
 
@@ -39,7 +39,7 @@ Jenkins is a open source automation server in which the central build and CI pro
 
 1. The code is initially stored on a local 
 
-2. A pair of SSH keys is generated and one key is added to the GitHub account this helps in connecting with GitHub. 
+2. A pair of SSH keys is generated and one key (public) is added to the GitHub account this helps in connecting with GitHub. 
 
 3. A webhook is set up, which automates the process of pushing code to the next stage whenever changes are made locally.Using webhook takes away the need for manual commands.
 
