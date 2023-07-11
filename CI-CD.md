@@ -89,35 +89,50 @@ Jenkins is a open source automation server in which the central build and CI pro
 
 # How to add webhook
 
-1. Go to your repository and select webhook. 
+1. Go to your repository and select webhook.
+    
 ![Alt text](<CICD.images/webhook selection.png>)
 
-2. select add webhook.
+1. select add webhook.
 
-3. add the payroll url, content type
+2. add the payroll url, content type.
+   
 ![Alt text](CICD.images/webhook.png) 
 
-4. Go to Which events would you like to trigger this webhook and select the option "let me select individual event". Select pull requests and push.
+1. Go to Which events would you like to trigger this webhook and select the option "let me select individual event". Select pull requests and push.
+   
 ![Alt text](<CICD.images/webhook options.png>)  
 
-5. Select Active and Add webhook. 
+1. Select Active and Add webhook. 
 
 # Steps to connect github and jenkins
 
 1. Log in to Jenkins and navigate to the Jenkins Dashboard.
 
 2. nter a name for the job and select "Freestyle project," then click "OK."
-
-3. Paste the SSH link of your GitHub repository in the provided field.
-
-4. Add a private SSH key by clicking on the "Add" button and providing the appropriate key. Make sure the file name matches the private key file.
-
-5. Change the branch to "main" (or your preferred branch name) in the branch specifier field.
-
-6. In the "Build Environment" section, select "Provide Node & npm bin/ folder to PATH" and choose "Sparta-Node-JS" from the dropdown menu.
-7. Click on "Add build step" and select "Execute shell" from the dropdown and add commands. 
    
-8.  Click on "Build Now" to initiate the build process.
+3. Select github project and enter the github http linke from code. 
+   
+![Alt text](<CICD.images/github url.png>)
+   
+4. Restrict where this project can be run and on label expression as sparta-ubuntu-node.
+
+
+5. In source code select git and paste the SSH link of your GitHub repository in the provided field.
+
+6. Add a private SSH key by clicking on the "Add" button and providing the appropriate key. Make sure the file name matches the private key file.
+
+7. Change the branch to "main" (or your preferred branch name) in the branch specifier field.
+
+8. In the "Build Environment" section, select "Provide Node & npm bin/ folder to PATH" and choose "Sparta-Node-JS" from the dropdown menu.
+  
+![Alt text](CICD.images/node.png)
+   
+9.  Click on "Add build step" and select "Execute shell" from the dropdown and add commands. 
+
+![Alt text](CICD.images/build.png)
+   
+10. Click on "Build Now" to initiate the build process.
 
 
 
