@@ -86,3 +86,40 @@ Jenkins is a open source automation server in which the central build and CI pro
 
 ![Alt text](<CICD.images/outup info.png>)
 
+
+# How to add webhook
+
+1. Go to your repository and select webhook. 
+![Alt text](<CICD.images/webhook selection.png>)
+
+2. select add webhook.
+
+3. add the payroll url, content type
+![Alt text](CICD.images/webhook.png) 
+
+4. Go to Which events would you like to trigger this webhook and select the option "let me select individual event". Select pull requests and push.
+![Alt text](<CICD.images/webhook options.png>)  
+
+5. Select Active and Add webhook. 
+
+# Steps to connect github and jenkins
+
+1. Log in to Jenkins and navigate to the Jenkins Dashboard.
+
+2. nter a name for the job and select "Freestyle project," then click "OK."
+
+3. Paste the SSH link of your GitHub repository in the provided field.
+
+4. Add a private SSH key by clicking on the "Add" button and providing the appropriate key. Make sure the file name matches the private key file.
+
+5. Change the branch to "main" (or your preferred branch name) in the branch specifier field.
+
+6. In the "Build Environment" section, select "Provide Node & npm bin/ folder to PATH" and choose "Sparta-Node-JS" from the dropdown menu.
+7. Click on "Add build step" and select "Execute shell" from the dropdown and add commands. 
+   
+8.  Click on "Build Now" to initiate the build process.
+
+
+
+
+
