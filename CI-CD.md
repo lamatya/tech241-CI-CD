@@ -135,6 +135,38 @@ Jenkins is a open source automation server in which the central build and CI pro
 10. Click on "Build Now" to initiate the build process.
 
 
+# How to build a project on jenkins;
+
+1. Plan the artitechture 
+2. Divide the jobs to different parts to break it down.
+
+# Job 1: Test on dev 
+
+1. This tests for the npm install. 
+
+# job 2: This part is to merge dev to main branch
+
+1. First create a dev branch on github and make a change on dev branch and push the commit.
+2. If the test pass then code should merge from dev to main branch.
+
+# job 3: Copy the app to push to production. 
+
+1. SSH into the EC2 instance.
+2. Navigate to the app folder
+3. npm install
+4. pm2 kill
+5. pm2 start app.js
+
+# Commands use  for job 3:
+
+#to copy the app folder
+rsync -avz -e "ssh -o StrictHostKeyChecking=no" app ubuntu@ec2-54-74-90-137.eu-west-1.compute.amazonaws.com:/home/ubuntu/app
+# SSH key
+ssh -o StrictHostKeyChecking=no ubuntu@ec2-54-74-90-137.eu-west-1.compute.amazonaws.com <<EOF
+    # Navigate to app folder
+    cd app
+    pm2 kill
+    pm2 start app.js
 
 
 
