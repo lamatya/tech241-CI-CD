@@ -8,7 +8,13 @@ CI is like a team collaboration. Whenever someone on the team makes a code chang
 CD (Continuous Delivery) and CDE (Continuous Deployment):
 CD takes CI a step further by automatically preparing the code for release. It includes tasks like packaging the code, deploying it to the specific environments (e.g., staging, production), and running additional tests. CDE goes even further and automatically deploys the code to production without manual intervention.
 
-Key difference: CD makes sure the code is ready for release, while CDE actually puts the code into production.# How to build jenkins server on AWS
+Key difference: CD makes sure the code is ready for release, while CDE actually puts the code into production.# How to build jenkins server on AWS.
+
+# What is Jenkins and why jenkins?
+
+Jenkins is open source automates repetitive tasks in software development. It provides a user-friendly website where you can define and schedule jobs. These jobs can build, test, and deploy your code automatically. Jenkins integrates with tools like Git and has lots of plugins to customize its behavior.
+
+# How to launch EC2 on AWS
 
 1. Sign in to the AWS Management Console with your AWS account credentials.
 
